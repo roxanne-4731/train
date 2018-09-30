@@ -114,12 +114,15 @@
 
             <date-picker v-model="date"></date-picker>
           </div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <input type="text">
+
+            <date-picker v-model="time" type="time" initial-value="20:45"></date-picker>
+          </div>
         </div>
       </form>
 
     </div>
-
-    <Good :id="image.id"></Good>
 
   </div>
 </template>
@@ -137,7 +140,8 @@
     },
     data() {
       return {
-        date: ''
+        date: '',
+        time: ''
       }
     }
   }

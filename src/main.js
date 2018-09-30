@@ -13,12 +13,14 @@ Vue.use(Vuelidate)
 Vue.use(VuePersianDatatimePicker,{
   name: 'custom-date-picker',
   props:{
-    format: 'X',
+    inputFormat: 'YYYY-MM-DD HH:mm',
+    format: 'jYYYY-jMM-jDD HH:mm',
     editable: false,
-    altFormat: 'YYYY/MM/DD HH:mm',
-    autoSubmit: true,
-    displayFormat: 'jYYYY/jMM/jDD',
-    appendTo: 'body'
+    inputClass: 'form-control my-custom-class-name',
+    placeholder: 'Please select a date',
+    altFormat: 'YYYY-MM-DD HH:mm',
+    color: '#00acc1',
+    autoSubmit: false,
   }
 })
 new Vue({
